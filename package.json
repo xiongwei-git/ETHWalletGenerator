@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/xiongwei-git/ETHWalletGenerator#readme",
   "dependencies": {
+    "better-xlsx": "^0.6.0",
+    "fast-csv": "^2.4.1",
     "keccak": "^1.4.0",
+    "moment": "^2.22.1",
     "secp256k1": "^3.5.0"
   }
 }
