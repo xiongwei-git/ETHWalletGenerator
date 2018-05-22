@@ -6,7 +6,7 @@ const csv = require("fast-csv"),
     core = require('./core'),
     myUtil = require('./util');
 
-var emailSrcFile = "EmailInfo.csv";
+var emailSrcFile = "EmailInfoTest.csv";
 
 //wallet array
 var wallletArray = new Array();
