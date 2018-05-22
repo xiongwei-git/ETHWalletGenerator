@@ -28,7 +28,7 @@ var stream = fs.createReadStream(path.resolve("./assets", emailSrcFile))
             Address: wallet[0]
         };
     })
-    .pipe(fs.createWriteStream(path.resolve("./assets", myUtil.fileName('Email&Address_'))))
+    .pipe(fs.createWriteStream(path.resolve("./assets", myUtil.fileName('Email_Address_'))))
     .on("finish", function () {
         csvHelper.write(myUtil.fileName('WalletInfo_'), wallletArray);
     });
