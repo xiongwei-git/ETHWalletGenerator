@@ -8,9 +8,7 @@ function writeToCSV(fileName, data) {
             headers: true
         })
         .pipe(ws)
-        .on("finish", function () {
-            console.log("writeToCSV done!");
-        });
+        .on("finish", function () {});
 }
 
 function readFromCSV(fileName) {
@@ -19,9 +17,7 @@ function readFromCSV(fileName) {
         .on("data", function (data) {
             console.log(data);
         })
-        .on("end", function () {
-            console.log("done");
-        });
+        .on("end", function () {});
     stream.pipe(csvStream);
 }
 
